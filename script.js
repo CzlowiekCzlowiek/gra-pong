@@ -13,7 +13,7 @@ let computerY = canvas.height/2 - paddleHeight/2;
 const step = 40 * scale
 const fontSize = 35 * scale;
 
-const minSpeed = 6.8 * scale;
+let minSpeed = 6.8 * scale;
 
 let ballX = canvas.width/2
 let ballY = canvas.height/2;
@@ -174,7 +174,6 @@ function loop() {
     checkEndGame();
     moveComputer();
     
-    console.log(losowa(4,9));
 
     ballX += moveX;
     ballY += moveY;
